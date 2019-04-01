@@ -1,0 +1,58 @@
+<fieldset>
+  <font size="200px">E-BOS</font>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/login">Login</a></li>
+    <li><a routerLink="/signup">Sign up</a></li>
+    <li><a routerLink="#contact">Contact</a></li>
+    <li><a routerLink="/about">About</a></li>
+  </ul>
+
+  <div class="container">
+    <div class="main">
+      <h1 align="center">E-BOS</h1>
+      <h2>Online Bakery Items Ordering System</h2>
+      <form [formGroup]="userForm" (ngSubmit)="loginUser(userForm.value)">
+        <div class="container">
+          <h1>Login</h1>
+          <hr>
+
+          <div
+            [ngClass]="{'has-danger':!userForm.controls['email'].valid && (userForm.get('email').touched || submitted)}">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" formControlName="email" name="email" required>
+            <div *ngIf="userForm.get('email').touched || submitted" style='color:red'>
+              <div *ngIf="userForm.get('email').hasError('required')">Email is required</div>
+              <div class='text-center'
+                *ngIf="!userForm.get('email').hasError('required') && userForm.hasError('email', 'email')">Email is
+                invalid</div>
+            </div>
+          </div>
+
+          <div
+            [ngClass]="{'has-danger':!userForm.controls['password'].valid && (userForm.get('password').touched || submitted)}">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" #id formControlName="password" name="psw" required>
+            <div *ngIf="userForm.get('password').touched || submitted" style='color:red'>
+              <div *ngIf="userForm.get('password').hasError('required')">Password is required</div>
+              <div class='text-center' *ngIf="id.value.length<8">Please enter more than 8</div>
+            </div>
+          </div>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="loginBtn" [disabled]="!userForm.valid">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <img src="../../assets/bg2.jpg">
+<br><br><br><br><br><br><br>
+
+</fieldset>

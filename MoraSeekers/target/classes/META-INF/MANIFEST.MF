@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Mora Seekers
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Dulani
+Implementation-Vendor-Id: com.uom.boot
+Build-Jdk: 1.8.0_191
+Implementation-URL: http://projects.spring.io/spring-boot/MoraSeekers/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

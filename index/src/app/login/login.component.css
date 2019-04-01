@@ -1,0 +1,131 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  } 
+  
+  /* fieldset */
+  fieldset { 
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+  img{
+    height: 600px;
+    width: 870px;
+    padding: 50px 50px 50px;
+  }
+  /*footer{
+    background-color: rgb(19, 18, 19);
+    padding: 2px;
+    text-align: center;
+    color: white;
+    height: 30px;
+  }*/
+  /*////////////////////////////////////////////////////////////////////////////////////////
+  
+  
+  /* Below line is used for online Google font */
+  @import url(http://fonts.googleapis.com/css?family=Raleway);
+  h2{
+  background-color: #FEFFED;
+  padding: 30px 35px;
+  margin: -10px -50px;
+  text-align:center;
+  border-radius: 10px 10px 0 0;
+  }
+  hr{
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 40px;
+  }
+  div.container{
+  /* width: 900px;
+  height: 610px; */
+  margin:15px auto;
+  font-family: 'Raleway', sans-serif;
+  }
+  div.main{
+  width: 300px;
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: raleway;
+  float:left;
+  margin-top:50px;
+  }
+  input[type=text],input[type=password]{
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+  }
+  label{
+  color: #464646;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: bold;
+  }
+  center{
+  font-size:32px;
+  }
+  .note{
+  color:red;
+  }
+  .valid{
+  color:green;
+  }
+  .back{
+  text-decoration: none;
+  border: 1px solid rgb(0, 143, 255);
+  background-color: rgb(0, 214, 255);
+  padding: 3px 20px;
+  border-radius: 2px;
+  color: black;
+  }
+  input[type=button]{
+  font-size: 16px;
+  background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+  border: 1px solid #e5a900;
+  color: #4E4D4B;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline:none;
+  }
+  input[type=button]:hover{
+  background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+  }
+
